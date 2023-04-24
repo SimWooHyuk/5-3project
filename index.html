@@ -6,21 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- 스타일 초기화 -->
+  <!-- 스타일 초기화 제일먼저 나오기 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <!-- 구글 웹 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- 머티리얼 아이콘 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <!-- 유튜브 -->
   <script src="./JS/youtube.js"></script>
 
   <link rel="stylesheet" href="./CSS/main.css">
-  
+
   <script defer src="./JS/main.js"></script>
 </head>
 
@@ -44,7 +45,6 @@
           </li>
         </ul>
       </div>
-
       <ul class="main-menu">
         <li class="item">
           <a href="javascript:void(0)" class="item__name1">상품안내</a>
@@ -114,7 +114,7 @@
           <a href="javascript:void(0)" class="item__name2">매장소개</a>
           <div class="item__contents">
             <div class="content__menu">
-              <ul class="main-bar">
+              <ul class="come">
                 <li class="comehere">
                   <h4 class="hover-effect">오시는길</h4>
                 </li>
@@ -131,7 +131,7 @@
         </a>
       </div>
       <div class="search-box">
-        <input type="text" class="search-txt" name=""placeholder="검색어를 입력해주세요">
+        <input type="text" class="search-txt" name="" placeholder="검색어를 입력해주세요">
       </div>
       <div class="infor">
         <a href="#">고객정보</a>
@@ -140,6 +140,131 @@
     </div>
 
   </header>
+  <main>
+    <div class="badge">
+      <ul class="badgemenu">
+        <li>
+          <a href="#">
+            <i class="top"></i>
+            <div class="label">TOP</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="label">매장 정보</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="label">주문 정보</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu-img">
+      <a href="#">
+        <img class="menu-img1" src="./images/set-menu-images.jpg" alt="setmenu">
+        <div class="text-set">
+          <h2>세트메뉴</h2>
+        </div>
+      </a>
+
+      <a href="#">
+        <img class="menu-img2" src="./images/one-menu-images.jpg" alt="onemenu">
+        <div class="text-one">
+          <h2>단품메뉴</h2>
+        </div>
+
+      </a>
+
+      <a href="#">
+        <img class="menu-img3" src="./images/side-menu-images.jpg" alt="sidemenu">
+        <div class="text-side">
+          <h2>사이드메뉴</h2>
+        </div>
+
+      </a>
+    </div>
+    <section>
+      <div class="news">
+        <div class="news-header">
+          햄버거 뉴스
+        </div>
+        <div class="news-main">
+          <div class="news-top">
+            <div class="newss"><a href="">
+                <img src="./images/monster-hamberger.jpg" alt="monster-hamberger">
+                <div class="news-text">
+                  <h2>햄버거의 한계를 담았다!</h2><br>
+                  <p>전국 어디서나 맛볼수있는<br>
+                    몬스터햄버거!<br><br>
+                    2023-4-20
+                </div>
+              </a>
+            </div>
+            <div class="newss"><a href="#">
+                <img src="./images/space-hamberger.jpg" alt="space-hamberger">
+                <div class="news-text">
+                  <h2>우주여행 다녀온 햄버거…</h2><br>
+                  <p>우주여행 다녀온 햄버거...<br>
+                    우주 햄버거의 시대가 도래했다!<br><br>
+                    2023-4-20
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="news-bottom">
+            <div class="newss"><a href="#">
+                <img src="./images/world-record-hamberger.jpg" alt="world-record-hamberger">
+                <div class="news-text2">
+                  <h2>햄버거의 한계를 담았다!</h2><br>
+                  <p>전국 어디서나 맛볼수있는<br>
+                    몬스터햄버거!<br><br>
+                    2023-4-20
+                </div>
+              </a>
+            </div>
+            <div class="newss"><a href="#">
+                <img src="./images/x100-hamberger.jpg" alt="x100-hamberger">
+                <div class="news-text2">
+                  <h2>햄버거의 한계를 담았다!</h2><br>
+                  <p>전국 어디서나 맛볼수있는<br>
+                    몬스터햄버거!<br><br>
+                    2023-4-20
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="youtube">
+      <div class="youtube__area">
+        <div id="player"></div>
+      </div>
+      <div class="youtube__cover"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-main">
+    <div class="footer-menu"><div><a href="">고객센터</a></div> . <div><a href=""> 개인정보처리방침</a> </div> . <div><a href="">이용약관</a></div> . <div><a href="">회사소개</a></div></div>
+    <div class="footer-infor">인천시 구월동 건설회관 타워 2층 주식회사 햄버거 전화주문 1588-0000 <br>
+      사업자 등록번호 100-80-1 (주)햄버거 대표이사 김그린 , 김아트 <br> 
+      © 2023 햄버거 . All Rights Reserved.
+      </div>
+    <div class="footer-sns">
+      <a href="#"><img src="./images/png/네이버블로그.png" alt="naverblog-icon"></a>
+      <a href="#"><img src="./images/png/밴드.png" alt="band-icon"></a>
+      <a href="#"><img src="./images/png/유투브.png" alt="youtube-icon"></a>
+      <a href="#"><img src="./images/png/인스타그램.png" alt="instagram-icon"></a>
+      <a href="#"><img src="./images/png/카카오스토리.png" alt="kakaostory-icon"></a>
+      <a href="#"><img src="./images/png/카카오톡.png" alt="kakaotalk-icon"></a>
+      <a href="#"><img src="./images/png/트위터.png" alt="twitter-icon"></a>
+      <a href="#"><img src="./images/png/페이스북.png" alt="facebook-icon"></a>
+    </div>
+  </div>
+  </footer>
 </body>
 
 </html>
