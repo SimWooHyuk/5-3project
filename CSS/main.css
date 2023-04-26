@@ -744,6 +744,7 @@ left: 177px;
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
+  z-index: 999;
 }
 
 /* 팝업창 내용 스타일 */
@@ -757,6 +758,7 @@ left: 177px;
   height: 600px;
   background-image: url(../images/hamberger-gwango.jpg);
   background-size: cover;
+
 }
 .popup-content .fivewon {
   color: #f00;
@@ -784,6 +786,7 @@ left: 177px;
   font-size: 40px;
   font-weight: bold;
   justify-content: flex-end;
+
 }
 
 .close:hover,
