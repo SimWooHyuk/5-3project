@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-    <!-- 스타일 초기화 제일먼저 나오기 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <!-- 구글 웹 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- GSAP & ScrollToPlugin -->
-    <!-- 순서 주의(main.js에서 사용하니까 더 앞에) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"
-      integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-    <!-- 머티리얼 아이콘 -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <!-- ScrollMagic -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
-      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- 유튜브 -->
-    <script src="./JS/youtube.js"></script>
-  
-    <link rel="stylesheet" href="../CSS/menu.css">
-    <script defer src="../JS/menu.js"></script>
+  <!-- 스타일 초기화 제일먼저 나오기 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!-- 구글 웹 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- GSAP & ScrollToPlugin -->
+  <!-- 순서 주의(main.js에서 사용하니까 더 앞에) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"
+    integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- 머티리얼 아이콘 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 유튜브 -->
+  <script src="./JS/youtube.js"></script>
+
+  <link rel="stylesheet" href="../CSS/menu.css">
+  <script defer src="../JS/menu.js"></script>
 </head>
+
 <body>
   <header class="header">
     <div class="inner">
@@ -148,11 +150,298 @@
       </div>
       </ul>
     </div>
-
+    <div class="header-blank"></div>
   </header>
 
   <main>
-
+    <div class="inner">
+      <div class="title">메뉴</div>
+      <div class="category">
+        <div class="SetMenu top-menu">
+          <a href="#">
+            세트메뉴
+          </a>
+        </div>
+        <div class="OneMenu top-menu">
+          <a href="#">
+            단품메뉴
+          </a>
+        </div>
+        <div class="SideMenu top-menu">
+          <a href="#">
+            사이드메뉴
+          </a>
+        </div>
+      </div>
+      <div class="MenuScreen">
+        <div class="MenuPan">
+          <div class="SetMenuPan">
+            <ul class="MenuList">
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p> 
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="SetMenuPan">
+            <ul class="MenuList">
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="SetMenuPan">
+            <ul class="MenuList">
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+              <li>
+                <div class="MenuImg"></div>
+                <div class="Infor">
+                  <p class="Infor-text">설명</p>
+                </div>
+                <a href="#" class="ImgBtn"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
 
@@ -180,4 +469,5 @@
   </footer>
 
 </body>
+
 </html>
