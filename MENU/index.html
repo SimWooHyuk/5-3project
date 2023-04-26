@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <!-- 스타일 초기화 제일먼저 나오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 구글 웹 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- GSAP & ScrollToPlugin -->
+    <!-- 순서 주의(main.js에서 사용하니까 더 앞에) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"
+      integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- 머티리얼 아이콘 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- 유튜브 -->
+    <script src="./JS/youtube.js"></script>
+  
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <script defer src="../JS/menu.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="inner">
+      <a href="javascript:void(0)" class="logo">
+        <img src="../images/font-hamberger-logo-removebg-preview.png" alt="hamberger">
+      </a>
+      <div class="sub-menu">
+        <ul class="log-reg">
+          <li>
+            <a href="javascript:void(0)">
+              로그인
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              회원가입
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="main-menu">
+        <li class="item">
+          <a href="javascript:void(0)" class="item__name1">상품안내</a>
+          <div class="item__contents">
+            <div class="content__menu">
+              <ul class="main-bar">
+                <li class="set">
+                  <h4 class="hover-effect">세트 메뉴</h4>
+                  <ul class="set-sub">
+                    <li class="subs hover-effect">몬스터버거 세트</li>
+                    <li class="subs hover-effect">치즈버거 세트</li>
+                    <li class="subs hover-effect">토마토버거 세트</li>
+                    <li class="subs hover-effect">오이버거 세트</li>
+                    <li class="subs hover-effect">더블치즈버거 세트</li>
+                    <li class="subs hover-effect">밥버거 세트</li>
+                  </ul>
+                </li>
+                <li class="one">
+                  <h4 class="hover-effect">단품 메뉴</h4>
+                  <ul class="one-sub">
+                    <li class="subs hover-effect">몬스터버거</li>
+                    <li class="subs hover-effect">치즈버거</li>
+                    <li class="subs hover-effect">토마토버거</li>
+                    <li class="subs hover-effect">오이버거</li>
+                    <li class="subs hover-effect">더블치즈버거</li>
+                    <li class="subs hover-effect">밥버거</li>
+                  </ul>
+                </li>
+                <li class="side">
+                  <h4 class="hover-effect">사이드 메뉴</h4>
+                  <ul class="side-sub">
+                    <li class="subs hover-effect">감자튀김</li>
+                    <li class="subs hover-effect">치즈스틱</li>
+                    <li class="subs hover-effect">치킨너겟</li>
+                    <li class="subs hover-effect">옥수수샐러드</li>
+                    <li class="subs hover-effect">치즈볼</li>
+                    <li class="subs hover-effect">양념감자</li>
+                  </ul>
+                </li>
+                <li class="cola">
+                  <h4 class="hover-effect">음료 & 디저트</h4>
+                  <ul class="cola-sub">
+                    <li class="subs hover-effect">코카콜라</li>
+                    <li class="subs hover-effect">펩시</li>
+                    <li class="subs hover-effect">스프라이트</li>
+                    <li class="subs hover-effect">포도주스</li>
+                    <li class="subs hover-effect">오렌지주스</li>
+                    <li class="subs hover-effect">컵 아이스크림</li>
+                  </ul>
+                </li>
+                <li class="bissa">
+                  <h4 class="hover-effect">프리미엄</h4>
+                  <ul class="bissa-sub">
+                    <li class="subs hover-effect">브론즈버거</li>
+                    <li class="subs hover-effect">실버버거</li>
+                    <li class="subs hover-effect">골드버거</li>
+                    <li class="subs hover-effect">다이아몬드버거</li>
+                    <li class="subs hover-effect">크리스탈버거</li>
+                    <li class="subs hover-effect">루비버거</li>
+                  </ul>
+                </li>
+
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <a href="javascript:void(0)" class="item__name2">매장소개</a>
+          <div class="item__contents">
+            <div class="content__menu">
+              <ul class="come">
+                <li class="comehere">
+                  <h4 class="hover-effect">오시는길</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <a href="javascript:void(0)" class="item__name3">뉴스</a>
+        </li>
+      </ul>
+      <div class="textlogo"><a href="#">
+          햄버거집
+        </a>
+      </div>
+      <div class="search-box">
+        <input type="text" class="search-txt" name="#" placeholder="검색어를 입력해주세요">
+      </div>
+      <div class="infor">
+        <a href="#">고객정보</a>
+      </div>
+      </ul>
+    </div>
+
+  </header>
+
+  <main>
+
+  </main>
+
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-menu">
+        <div><a href="#">고객센터</a></div> . <div><a href="#"> 개인정보처리방침</a> </div> . <div><a href="#">이용약관</a></div> .
+        <div><a href="#">회사소개</a></div>
+      </div>
+      <div class="footer-infor">인천시 구월동 건설회관 타워 2층 주식회사 햄버거 전화주문 1588-0000 <br>
+        사업자 등록번호 100-80-1 (주)햄버거 대표이사 김그린 , 김아트 <br>
+        © <span class="this-year"></span> 햄버거 . All Rights Reserved.
+      </div>
+      <div class="footer-sns">
+        <a href="#"><img src="../images/png/네이버블로그.png" alt="naverblog-icon"></a>
+        <a href="#"><img src="../images/png/밴드.png" alt="band-icon"></a>
+        <a href="#"><img src="../images/png/유투브.png" alt="youtube-icon"></a>
+        <a href="#"><img src="../images/png/인스타그램.png" alt="instagram-icon"></a>
+        <a href="#"><img src="../images/png/카카오스토리.png" alt="kakaostory-icon"></a>
+        <a href="#"><img src="../images/png/카카오톡.png" alt="kakaotalk-icon"></a>
+        <a href="#"><img src="../images/png/트위터.png" alt="twitter-icon"></a>
+        <a href="#"><img src="../images/png/페이스북.png" alt="facebook-icon"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
