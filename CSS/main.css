@@ -32,6 +32,7 @@ body {
 header .inner {
   width: 100%;
   height: 150px;
+  border-radius: 0 0 100px 100px;
   background-color: #ffebdc;
   display: flex;
   position: fixed;
@@ -341,6 +342,7 @@ main {
   z-index: 10;
   background-color: #00f;
 }
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    MAIN   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 
@@ -348,7 +350,7 @@ main {
   /* position: absolute; */
   width: 500px;
   height: 400px;
-
+  border-radius: 100px 0 0 100px;
   background-color: rgba(0, 0, 0, .5);
 
 }
@@ -365,10 +367,11 @@ main {
   /* position: absolute; */
   width: 500px;
   height: 400px;
-
+  border-radius: 0 100px 100px 0;
   background-color: rgba(0, 0, 0, .5);
 }
-.m-blocks  {
+
+.m-blocks {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
@@ -376,9 +379,10 @@ main {
   height: 400px;
   /* background-color: #deb888; */
   /* overflow: hidden; */
-  justify-content: center;  
-  
+  justify-content: center;
+
 }
+
 .menu-block1:hover,
 .menu-block2:hover,
 .menu-block3:hover {
@@ -407,7 +411,7 @@ main {
 }
 
 .menu-img1 {
-
+  border-radius: 100px 0 0 100px;
   width: 500px;
   height: 400px;
 
@@ -425,7 +429,7 @@ main {
 .menu-img3 {
   height: 400px;
   width: 500px;
-
+  border-radius: 0 100px 100px 0;
   transition: .5s;
 
 }
@@ -447,14 +451,19 @@ main {
   height: 710px;
   z-index: 999;
 } */
-.menu1, .menu2, .menu3 {
+.menu1,
+.menu2,
+.menu3 {
   width: 500px;
   height: 400px;
 }
+
 .menu-img .text-set {
   font-size: 50px;
   position: absolute;
   color: #fff;
+  top: 0%;
+  left: 25%;
   text-align: center;
   align-items: center;
 }
@@ -464,7 +473,7 @@ main {
   position: absolute;
   color: #fff;
   top: 0%;
-  left: 41%;
+  left: 45%;
   text-align: center;
   align-items: center;
 }
@@ -474,7 +483,7 @@ main {
   position: absolute;
   color: #fff;
   top: 0%;
-  left: 61%;
+  left: 64%;
   text-align: center;
   align-items: center;
 }
@@ -600,19 +609,26 @@ main {
   font-weight: 500;
 }
 
+.clMoreBtn a {
+  color: #fff;
+}
+
 .clMoreBtn {
   line-height: 45px;
   display: flex;
   margin-left: 30px;
-  font-size: 16px;
+  font-size: 30px;
+
+  font-weight: bold;
   position: absolute;
   right: 0;
 }
 
 .best-collectionWrap {
-
+  background-image: url(../images/best-back-images.jpg);
   padding: 50px 0px;
-  background: #ebe0d2;
+  background-size: cover;
+  /* background: #ebe0d2; */
 }
 
 .collection {
@@ -746,7 +762,7 @@ main {
   text-align: center;
 }
 
-/* @@@@@@@@@@@@@@footer@@@@@@@@ */
+/* @@@@@@@@@@@@@@footer@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .footer {
   width: 100%;
   height: auto;

@@ -6,14 +6,14 @@ const spyEls = document.querySelectorAll('.scroll-spy');
 spyEls.forEach(function (spyEl) {
   new ScrollMagic
     .Scene({
-      triggerElement: spyEl, 
-      triggerHook: 0.8 
+      triggerElement: spyEl,
+      triggerHook: 0.8
     })
-    .setClassToggle(spyEl, 'show') 
-    .addTo(new ScrollMagic.Controller()); 
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller());
 });
 // 팝업
-window.onload = function() {
+window.onload = function () {
   openPopup();
 };
 
@@ -24,3 +24,8 @@ function openPopup() {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+//뉴스 위치 이동
+const toNewsEl = document.querySelector('.item__name3');
+toNewsEl.addEventListener('click', function (event) {
+  gsap.to(window, { duration: 0.6, scrollTo: { y: 400 } });
+});

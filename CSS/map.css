@@ -1,3 +1,70 @@
+body {
+  /* width: 100%; */
+  /* height: 100%; */
+  /* padding: 30px; */
+  margin: 0;
+}
+
+/* #contact_map {
+  width: 800px;
+  height: 500px;
+  
+}
+#contact_map iframe {
+  width: 100%;
+  height: 100%;
+  border:3px solid purple;
+  
+} */
+.container {
+  display: flex;
+}
+
+.m-inner {
+  justify-content: center;
+  align-items: center;
+}
+
+.m-innerhd h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.m-innerhd {
+  width: 1300px;
+  height: 70px;
+  background-color: #fff;
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.infor {
+  /* justify-content: center; */
+}
+
+.information h2 {
+  font-size: 24px;
+
+}
+
+.information p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.information {
+  width: 700px;
+  height: 456.39px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -29,12 +96,11 @@ body {
   font-size: 20px;
 }
 
-
 header .inner {
   width: 100%;
   height: 150px;
-  border-radius: 0 0 100px 100px;
   background-color: #ffebdc;
+  border-radius: 0 0 100px 100px;
   display: flex;
   position: fixed;
   z-index: 100;
@@ -265,7 +331,7 @@ main {
 
 .content__menu .come .comehere {
   height: auto;
-  left: 900px;
+  left: 800px;
   font-size: 20px;
   width: 900px;
   /* background-color: blue; */
@@ -344,160 +410,6 @@ main {
   background-color: #00f;
 }
 
-/* @@@@@@@@@@@@@@MENU@@@@@@@@@@@@@ */
-
-main {
-  background-image: url('../images/hamberger-background.jpg');
-  /* width: 100%; */
-  height: auto;
-  padding: 50px;
-  min-height: 445.5px;
-
-}
-
-.inner {
-  /* display: flex; */
-  justify-content: center;
-  text-align: center;
-  background-color: #fff;
-}
-
-.title {
-  width: 100%;
-  height: 60px;
-  font-size: 40px;
-  font-weight: 700;
-}
-
-
-
-.SetMenuList {
-  display: none;
-  flex-wrap: wrap;
-  padding: 100px;
-  justify-content: center;
-}
-
-.SetMenuList li {
-  width: 30%;
-  height: 400px;
-  padding: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.SetMenuList li .MenuImg img {
-  width: 300px;
-  height: 300px;
-  align-items: center;
-}
-
-.OneMenuList {
-  display: none;
-  flex-wrap: wrap;
-  padding: 100px;
-  justify-content: center;
-}
-
-.OneMenuList li {
-  width: 30%;
-  height: 400px;
-  padding: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.OneMenuList li .MenuImg img {
-  width: 300px;
-  height: 300px;
-  align-items: center;
-}
-
-.SideMenuList {
-  display: none;
-  flex-wrap: wrap;
-  padding: 100px;
-  justify-content: center;
-}
-
-.SideMenuList li {
-  width: 30%;
-  height: 400px;
-  padding: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.SideMenuList li .MenuImg img {
-  width: 300px;
-  height: 300px;
-  align-items: center;
-}
-
-.PreMenuList {
-  display: none;
-  flex-wrap: wrap;
-  padding: 100px;
-  justify-content: center;
-}
-
-.PreMenuList li {
-  width: 40%;
-  height: 350px;
-  padding: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.PreMenuList li .MenuImg img {
-  width: 300px;
-  height: 300px;
-  align-items: center;
-}
-
-.Infor-text {
-  display: block;
-  color: #292929;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.3;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
-.category .btn44 .btn {
-  width: 50px;
-  border-radius: 50%;
-  border: 2px solid #f00;
-}
-
-.btn44 {
-  display: none;
-}
-
-.category {
-  display: flex;
-  justify-content: center;
-  /* width: 100px; */
-  /* border: 1px solid #000; */
-  /* background-image: transparent; */
-}
-
-.category .btn {
-  border: 3px solid #000;
-  width: 100px;
-  display: inline-block;
-  box-shadow: 3px 3px 3px black;
-  border-radius: 20px;
-}
-
-.btn:active {
-  margin-left: 5px;
-  margin-top: 5px;
-  box-shadow: none;
-}
-
-/* @@@@@@@@@@@@@@footer@@@@@@@@ */
 .footer {
   width: 100%;
   height: auto;
@@ -506,9 +418,6 @@ main {
 
 .footer-main {
   background-color: #000;
-  /* position: fixed; */
-  bottom: 0;
-  width: 100%;
 }
 
 .footer-menu {
