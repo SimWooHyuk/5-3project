@@ -27,5 +27,7 @@ function closePopup() {
 //뉴스 위치 이동
 const toNewsEl = document.querySelector('.item__name3');
 toNewsEl.addEventListener('click', function (event) {
-  gsap.to(window, { duration: 0.6, scrollTo: { y: 400 } });
+  event.preventDefault();
+  $('html,body').animate({ scrollTop: $(this.hash).offset().top - 100}, 500);
+
 });
