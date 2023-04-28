@@ -1,70 +1,3 @@
-body {
-  /* width: 100%; */
-  /* height: 100%; */
-  /* padding: 30px; */
-  margin: 0;
-}
-
-/* #contact_map {
-  width: 800px;
-  height: 500px;
-  
-}
-#contact_map iframe {
-  width: 100%;
-  height: 100%;
-  border:3px solid purple;
-  
-} */
-.container {
-  display: flex;
-}
-
-.m-inner {
-  justify-content: center;
-  align-items: center;
-}
-
-.m-innerhd h2 {
-  font-size: 30px;
-  text-align: center;
-}
-
-.m-innerhd {
-  width: 1300px;
-  height: 70px;
-  background-color: #fff;
-
-}
-
-main {
-  display: flex;
-  justify-content: center;
-}
-
-.infor {
-  /* justify-content: center; */
-}
-
-.information h2 {
-  font-size: 24px;
-
-}
-
-.information p {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.information {
-  width: 700px;
-  height: 456.39px;
-  background-color: #fff;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -82,25 +15,128 @@ body {
   /* width: 100%; */
   /* background-color: #deb888 */
 }
-
-
-.red {
-  color: #f00;
-  font-size: 20px;
+header {
+  display: flex;
+  text-align: center;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.head {
+  width: 100%;
+  height: 150px;
   font-weight: bold;
+  font-size: 70px;
+  /* background-color: bisque; */
+
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.name {
+  display: flex;
+  justify-content: center;
+}
+.e-pass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.signup-box {
+  width: 700px;
+  height: auto;
+  /* background-color: aqua; */
+}
+.signup-head {
+  text-align: center;
+  border: 5px solid #000;
+  box-shadow: 5px 5px 5px 0px;
+}
+.signup-bd {
+  border: 5px solid #000;
+  border-top: none;
+  box-shadow: 5px 5px 5px 5px;
+}
+.signup-head-tp {
+  font-size: 50px;
+}
+.signup-head-bt {
+  font-size: 35px;
+}
+.first-name input,
+.last-name input {
+  width: 230px;
+  height: 30px;
 }
 
-.blue {
+.first-name, .last-name {
+  padding: 20px;
+}
+.phone-e input{
+  width: 500px;
+  height: 30px;
+}
+.password input {
+  width: 500px;
+  height: 30px;
+}
+.password {
+  padding-top: 20px;
+}
+.birth {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#yy, #mm , #dd {
+  padding-right: 30px;
+}
+.birth-t {
+  text-align: center;
+}
+.m-w-t {
+  text-align: center;
+}
+.man-woman {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 30px;
+}
+.m-w-i {
+  border: 1px solid #000;
+}
+.enter {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+  .btn {
+  width: 300px;
+  height: 90px;
+  
+  margin-bottom: 30px;
+  border: 0px;
+  background-color: #e4ebf5;
+  border-radius: 10px;
+  box-shadow:.8rem .5rem 1.4rem  #BEC5D0, -.3rem -.4rem .8rem #fbfbfb;
+  color: #333333;
+  font-size: 1.7em;
   font-weight: bold;
-  color: #00f;
-  font-size: 20px;
+}
+.btn:active {
+  box-shadow: inset -.3rem -.1rem 1.4rem  #FBFBFB, inset .3rem .4rem .8rem #BEC5D0; 
+  cursor: pointer;
 }
 
 header .inner {
   width: 100%;
   height: 150px;
-  background-color: #ffebdc;
   border-radius: 0 0 100px 100px;
+  background-color: #ffebdc;
   display: flex;
   position: fixed;
   z-index: 100;
@@ -132,7 +168,7 @@ a:hover {
 }
 
 main {
-  background-image: url('../images/hamberger-background.jpg');
+  /* background-image: url('../images/hamberger-background.jpg'); */
 }
 
 .main-menu .item__contents {
@@ -331,7 +367,7 @@ main {
 
 .content__menu .come .comehere {
   height: auto;
-  left: 800px;
+  left: 900px;
   font-size: 20px;
   width: 900px;
   /* background-color: blue; */
@@ -409,47 +445,11 @@ main {
   z-index: 10;
   background-color: #00f;
 }
-
-.footer {
-  width: 100%;
-  /* height: auto; */
-
-}
-
-.footer-main {
-  background-color: #000;
-  height: 293px;
-}
-
-.footer-menu {
-  font-size: 30px;
-
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.footer-infor {
+.tolog {
+  font-size: 25px;
   text-align: center;
+  padding-bottom: 30px;
 }
-
-.footer-sns {
-  display: flex;
-  width: 100%;
-  position: relative;
-  justify-content: flex-end;
-
-}
-
-.footer-sns a img {
-  width: 70px;
-  opacity: .5;
-  padding: 10px;
-  border-radius: 50%;
-}
-
-.footer-menu a {
-  color: #fff;
-  opacity: .5;
-  text-decoration: none;
+.tolog a {
+  color: #00f;
 }

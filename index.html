@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>햄버거집 홈페이지</title>
   <!-- 스타일 초기화 제일먼저 나오기 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <!-- 구글 웹 폰트 -->
@@ -30,9 +30,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
     integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- 유튜브 -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="./JS/youtube.js"></script>
+    <!-- 제이쿼리 -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 유튜브 -->
+    <script src="./JS/youtube.js"></script>
 
   <link rel="stylesheet" href="./CSS/main.css">
 
@@ -48,12 +50,12 @@
       <div class="sub-menu">
         <ul class="log-reg">
           <li>
-            <a href="javascript:void(0)">
+            <a href="./LOGIN/index.html">
               로그인
             </a>
           </li>
           <li>
-            <a href="javascript:void(0)">
+            <a href="./REG/index.html">
               회원가입
             </a>
           </li>
@@ -140,6 +142,9 @@
         </li>
         <li class="item">
           <a href="#newsBox" class="item__name3">뉴스</a>
+        </li>
+        <li class="item">
+          <a href="#YoutubeBox" class="item__name4">유튜브</a>
         </li>
       </ul>
       <div class="textlogo"><a href="#">
@@ -293,7 +298,8 @@
                 <a href="#">
                   <span>
                     <p class="berger-name">스리라차 버거</p><br>
-                    <p class="price">12000원</p>
+                    <span class="price">12000원</span>
+                    <span class="dis-price">→5000원</span>
                   </span>
                 </a>
               </span>
@@ -313,7 +319,8 @@
                 <a href="#">
                   <span>
                     <p class="berger-name">미트마니아 버거</p><br>
-                    <p class="price">9000원</p>
+                    <span class="price">9000원</span>
+                    <span class="dis-price">→5000원</span>
                   </span>
                 </a>
               </span>
@@ -333,7 +340,8 @@
                 <a href="#">
                   <span>
                     <p class="berger-name">메가 버거</p><br>
-                    <p class="price">11000원</p>
+                    <span class="price">11000원</span>
+                    <span class="dis-price">→5000원</span>
                   </span>
                 </a>
               </span>
@@ -353,20 +361,21 @@
                 <a href="#">
                   <span>
                     <p class="berger-name">맥앤치즈 버거</p><br>
-                    <p class="price">10000원</p>
-                  </span>
+                    <span class="price">10000원</span>
+                    <span class="dis-price">→5000원</span>
+                  </div>
                 </a>
               </span>
-            </div>
+            
             <div class="cart">
-              <a href="#">
+              <a href=" #">
                 <img src="./images/buy-cart.png" alt="buy-cart-icon">
               </a>
             </div>
           </div>
-
+</div>
     </section>
-    <section class="youtube">
+    <section id="YoutubeBox" class="youtube">
       <div class="youtube__area">
         <div id="player"></div>
       </div>

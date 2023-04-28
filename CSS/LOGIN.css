@@ -1,70 +1,3 @@
-body {
-  /* width: 100%; */
-  /* height: 100%; */
-  /* padding: 30px; */
-  margin: 0;
-}
-
-/* #contact_map {
-  width: 800px;
-  height: 500px;
-  
-}
-#contact_map iframe {
-  width: 100%;
-  height: 100%;
-  border:3px solid purple;
-  
-} */
-.container {
-  display: flex;
-}
-
-.m-inner {
-  justify-content: center;
-  align-items: center;
-}
-
-.m-innerhd h2 {
-  font-size: 30px;
-  text-align: center;
-}
-
-.m-innerhd {
-  width: 1300px;
-  height: 70px;
-  background-color: #fff;
-
-}
-
-main {
-  display: flex;
-  justify-content: center;
-}
-
-.infor {
-  /* justify-content: center; */
-}
-
-.information h2 {
-  font-size: 24px;
-
-}
-
-.information p {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.information {
-  width: 700px;
-  height: 456.39px;
-  background-color: #fff;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -82,25 +15,32 @@ body {
   /* width: 100%; */
   /* background-color: #deb888 */
 }
-
-
-.red {
-  color: #f00;
-  font-size: 20px;
-  font-weight: bold;
+header {
+  display: flex;
+  text-align: center;
 }
-
-.blue {
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.head {
+  width: 100%;
+  height: 150px;
   font-weight: bold;
-  color: #00f;
-  font-size: 20px;
+  font-size: 70px;
+  /* background-color: bisque; */
+
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 header .inner {
   width: 100%;
   height: 150px;
-  background-color: #ffebdc;
   border-radius: 0 0 100px 100px;
+  background-color: #ffebdc;
   display: flex;
   position: fixed;
   z-index: 100;
@@ -132,7 +72,7 @@ a:hover {
 }
 
 main {
-  background-image: url('../images/hamberger-background.jpg');
+  /* background-image: url('../images/hamberger-background.jpg'); */
 }
 
 .main-menu .item__contents {
@@ -331,7 +271,7 @@ main {
 
 .content__menu .come .comehere {
   height: auto;
-  left: 800px;
+  left: 900px;
   font-size: 20px;
   width: 900px;
   /* background-color: blue; */
@@ -410,46 +350,74 @@ main {
   background-color: #00f;
 }
 
-.footer {
-  width: 100%;
-  /* height: auto; */
-
+.login-box {
+  width: 500px;
+  height: auto;
+  border: 5px solid #000;
+  box-shadow: 5px 5px 5px 5px;
 }
-
-.footer-main {
-  background-color: #000;
-  height: 293px;
+.login-hd {
+  text-align: center;
+  font-size: 35px;
 }
-
-.footer-menu {
-  font-size: 30px;
-
-  padding: 50px;
+.login-bd {
   display: flex;
   justify-content: center;
 }
 
-.footer-infor {
-  text-align: center;
-}
-
-.footer-sns {
-  display: flex;
-  width: 100%;
-  position: relative;
-  justify-content: flex-end;
-
-}
-
-.footer-sns a img {
-  width: 70px;
-  opacity: .5;
+.phone-e,
+.password{
   padding: 10px;
-  border-radius: 50%;
+  
 }
+.phone-e input,
+.password input {
+  width: 380px;
+  height: 50px;
+  padding: 10px;
+  font-size: 18px;
+}
+.btn {
+  width: 200px;
+  height: 60px;
 
-.footer-menu a {
-  color: #fff;
-  opacity: .5;
-  text-decoration: none;
+  margin-bottom: 30px;
+  border: 0px;
+  background-color: #e4ebf5;
+  border-radius: 10px;
+  box-shadow:.8rem .5rem 1.4rem  #BEC5D0, -.3rem -.4rem .8rem #fbfbfb;
+  color: #333333;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.enter {
+  width: 500px;
+display: flex;
+justify-content: center;
+padding: 30px;
+}
+.btn:active {
+  box-shadow: inset -.3rem -.1rem 1.4rem  #FBFBFB, inset .3rem .4rem .8rem #BEC5D0; 
+  cursor: pointer;
+}
+.toreg {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.toreg-btn a {
+color: #fff;
+}
+.toreg-btn {
+  font-weight: 700;
+  background-color: #008000;
+  font-size: 20px;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+}
+.ddonun {
+  width: 100%;
+  text-align: center;
+
 }

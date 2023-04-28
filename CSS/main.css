@@ -395,7 +395,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   /* background-color: #deb888; */
   overflow: hidden;
   justify-content: center;
@@ -495,13 +495,13 @@ main {
 
 .news {
   width: 1500px;
-  height: 700px;
+  height: auto;
   /* background-color: #deb888; */
   color: #000;
   background-image: url('../images/background-real-news.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-
+  padding-bottom: 55px  ;
 }
 
 .news-header {
@@ -626,9 +626,10 @@ main {
 
 .best-collectionWrap {
   background-image: url(../images/best-back-images.jpg);
-  padding: 50px 0px;
+  padding: 45px 0px;
   background-size: cover;
   /* background: #ebe0d2; */
+  height: auto;
 }
 
 .collection {
@@ -643,16 +644,24 @@ main {
 }
 
 .cl-menu {
+  opacity: 0;
   padding-left: 20px;
+  max-width:100%;
 }
 
 .price {
   font-size: 22px;
   font-weight: bold;
   margin-left: 5px;
-  color: #683b28;
+  text-decoration: line-through;
+  color: #444;
 }
+.dis-price {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 5px;
 
+}
 .berger-name {
   font-size: 30px;
   font-weight: 700;
@@ -734,7 +743,10 @@ main {
   top: 350px;
   left: 150px;
 }
-
+.badgemenu {
+  position: relative;
+  width:100%;
+}
 .badge {
   position: fixed;
   right: 30px;
@@ -746,7 +758,7 @@ main {
 .badge ul {
   padding: 3px 0;
   border-radius: 5px;
-  background-color: #000;
+  background-color: rgb(0,0,0);
   width: auto;
   box-sizing: border-box;
 }
