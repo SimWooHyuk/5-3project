@@ -24,7 +24,7 @@ function openPopup() {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
-//뉴스 위치 이동
+//뉴스 위치 이동 // 몰라서 검색함 //
 const toNewsEl = document.querySelector('.item__name3');
 toNewsEl.addEventListener('click', function (event) {
   event.preventDefault();
