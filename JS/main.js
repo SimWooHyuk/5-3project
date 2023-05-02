@@ -56,3 +56,26 @@ $(document).ready(function() {
     });
   });
 });
+
+//모바일
+const mobileMenu = document.querySelector('.mm-menu');
+const screenBlock = document.querySelector('.screen-block');
+function viewMenu() {
+  if (mobileMenu.style.display == 'block') {
+    mobileMenu.style.display = 'none'
+  } else {
+    mobileMenu.style.display = 'block'
+  };  
+};
+
+const wallBtn1 = document.querySelector('.wallbtn1')
+const wallBtn2 = document.querySelector('.wallbtn2')
+const wallBtn3 = document.querySelector('.wallbtn3')
+const wallBtn4 = document.querySelector('.wallbtn4')
+const wall1 = document.querySelector('.wall1')
+const wall2 = document.querySelector('.wall2')
+const wall3 = document.querySelector('.wall3')
+const wall4 = document.querySelector('.wall4')
+wallBtn1.addEventListener('click', function() {
+    wall1.classList.toggle('hidden');
+  });

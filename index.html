@@ -23,7 +23,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"
     integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- 머티리얼 아이콘 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <!-- ScrollMagic -->
@@ -43,6 +43,59 @@
 
 <body>
   <header class="header">
+    <button id="m-button" onclick="viewMenu()"></button>
+    <div class="mm-menu">
+      <div class="m-menu">
+
+        <div class="m-bar">
+          <div class="m-12">
+            <div class="m1">
+              <a href="./LOGIN/index.html">
+              로그인
+            </a>
+            </div>
+            <a href="./REG/index.html">
+            <div class="m2">
+              회원가입
+            </div>
+          </a>
+          </div>
+          <a href="./MENU/index.html">
+          <div class="m3">
+            메뉴소개
+          </div>
+        </a>
+
+          <a href="./Map/index.html">
+          <div class="m3">
+            매장정보
+          </div>
+        </a>
+        </div>
+        
+        <div class="m-logo">
+          <a href="https://www.instagram.com/">
+          <img class="m-logos" src="./images/png/인스타그램.png" alt="naver-band">
+          </a>
+          <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">
+          <img class="m-logos" src="./images/png/네이버블로그.png" alt="blog">
+        </a>
+          <a href="https://www.youtube.com/">
+          <img class="m-logos" src="./images/png/유투브.png" alt="youtube">
+        </a>
+        <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk">
+          <img class="m-logos" src="./images/png/카카오톡.png" alt="kakaotalk">
+        </a>
+        <a href="https://ko-kr.facebook.com/">
+          <img class="m-logos" src="./images/png/페이스북.png" alt="instagram">
+        </a>
+        <a href="https://twitter.com/?lang=ko">
+          <img class="m-logos" src="./images/png/트위터.png" alt="twitter">
+        </a>
+        </div>
+
+      </div>
+</div>
     <div class="inner">
       <a href="javascript:void(0)" class="logo">
         <img src="./images/font-hamberger-logo-removebg-preview.png" alt="hamberger">
@@ -61,11 +114,12 @@
           </li>
         </ul>
       </div>
+
       <ul class="main-menu">
         <li class="item">
           <a href="./MENU/index.html" class="item__name1">상품안내</a>
           <div class="item__contents">
-            <div class="content__menu">
+             <div class="content__menu">
               <ul class="main-bar">
                 <li class="set">
                   <h4 class="hover-effect">세트 메뉴</h4>
@@ -184,6 +238,27 @@
         </li>
       </ul>
     </div>
+<section class="wall">
+<div class="wallinner">
+   
+  <div class="inwall">
+  <button class="wallbtn">></button>
+    <img class="wall1" src="./images/hamberger/wallpage1.jpg" alt="wall">
+  </div>
+  <div class="inwall2">
+    <button class="wallbtn">></button>
+    <img src="./images/hamberger/wallpage2.jpg" alt="wall">
+  </div>
+  <div class="inwall3">
+    <button class="wallbtn">></button>
+    <img src="./images/hamberger/wallpage3.jpg" alt="wall">
+  </div>
+  <div class="inwall4">
+    <button class="wallbtn">></button>
+    <img src="./images/hamberger/wallpage4.jpg" alt="wall">
+  </div>
+</div>
+</section>
     <div class="menu-img">
       <div class="menu1">
         <img class="menu-img1 " src="./images/set-menu-images.jpg" alt="setmenu">
@@ -216,7 +291,6 @@
       </div>
     </div>
     <section id="newsBox" class="newsnews">
-      <div class="aaaa">
         <div class="news">
           <div class="news-header">
             햄버거 뉴스
@@ -271,7 +345,7 @@
                       <p class="red">780원</p> 햄버거 vs <p class="red">7만원</p> 햄버거
                     </h2><br>
                     <p>대체 안에 뭐가들었길래!?<br>
-                      가격차이가 100배나!!??<br><br>
+                      가격차이가 100배나!!??<br>
                       2023-4-20
                   </div>
                 </a>
@@ -279,10 +353,10 @@
             </div>
           </div>
         </div>
-      </div>
+
     </section>
 
-    <section class="best-collectionWrap">
+    <section class="best-collectionWrap best-top">
       <div class="collection">
         <div class="clTitlebox">
           <h1 class="clTitle">햄버거집 베스트</h1>
@@ -394,14 +468,14 @@
         © <span class="this-year"></span> 햄버거 . All Rights Reserved.
       </div>
       <div class="footer-sns">
-        <a href="#"><img src="./images/png/네이버블로그.png" alt="naverblog-icon"></a>
-        <a href="#"><img src="./images/png/밴드.png" alt="band-icon"></a>
-        <a href="#"><img src="./images/png/유투브.png" alt="youtube-icon"></a>
-        <a href="#"><img src="./images/png/인스타그램.png" alt="instagram-icon"></a>
-        <a href="#"><img src="./images/png/카카오스토리.png" alt="kakaostory-icon"></a>
-        <a href="#"><img src="./images/png/카카오톡.png" alt="kakaotalk-icon"></a>
-        <a href="#"><img src="./images/png/트위터.png" alt="twitter-icon"></a>
-        <a href="#"><img src="./images/png/페이스북.png" alt="facebook-icon"></a>
+        <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0"><img src="./images/png/네이버블로그.png" alt="naverblog-icon"></a>
+        <a href="https://www.instagram.com/"><img src="./images/png/밴드.png" alt="band-icon"></a>
+        <a href="https://www.youtube.com"><img src="./images/png/유투브.png" alt="youtube-icon"></a>
+        <a href="https://www.instagram.com/"><img src="./images/png/인스타그램.png" alt="instagram-icon"></a>
+        <a href="https://accounts.kakao.com/login/?continue=https://story.kakao.com/#login"><img src="./images/png/카카오스토리.png" alt="kakaostory-icon"></a>
+        <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk"><img src="./images/png/카카오톡.png" alt="kakaotalk-icon"></a>
+        <a href="https://twitter.com/?lang=ko"><img src="./images/png/트위터.png" alt="twitter-icon"></a>
+        <a href="https://ko-kr.facebook.com/"><img src="./images/png/페이스북.png" alt="facebook-icon"></a>
       </div>
     </div>
   </footer>

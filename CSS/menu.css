@@ -68,6 +68,7 @@ a:hover {
 
 main {
   background-image: url('../images/hamberger-background.jpg');
+
 }
 
 .main-menu .item__contents {
@@ -352,7 +353,7 @@ main {
   /* width: 100%; */
   height: auto;
   padding: 50px;
-  min-height: 445.5px;
+  min-height: 550px;
 
 }
 
@@ -466,15 +467,15 @@ main {
   padding-bottom: 20px;
 }
 
-.category .btn44 .btn {
-  width: 50px;
+/* .category .btn44 .btn {
+  width: 100px;
   border-radius: 50%;
   border: 2px solid #f00;
 }
 
 .btn44 {
   display: none;
-}
+} */
 
 .category {
   display: flex;
@@ -506,6 +507,7 @@ main {
 }
 
 .footer-main {
+  /* position: absolute; */
   background-color: #000;
   /* position: fixed; */
   bottom: 0;
