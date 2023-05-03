@@ -72,5 +72,5 @@ preMenuBtn.addEventListener('click', function () {
 const toNewsEl = document.querySelector('.item__name3'); // selects element with class "item__name3"
 toNewsEl.addEventListener('click', function (event) { // adds click event listener to element
   event.preventDefault(); // prevents default behavior of click event
-  $('html,body').animate({ scrollTop: $(this.hash).offset().top - 150}, 500); // animates scroll to section on page
+  $('html,body').animate({ scrollTop: $(this.hash).offset().top - 150 }, 500); // animates scroll to section on page
 });
